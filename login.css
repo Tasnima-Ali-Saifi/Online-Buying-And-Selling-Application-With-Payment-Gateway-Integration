@@ -1,0 +1,44 @@
+/* Add your custom styles here */
+body{
+  font-family: Arial, sans-serif;
+    background-image: url("img/pexels-pixabay-531880.jpg");
+}
+h1 {
+    text-align: center;
+  }
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 20px;
+  }
+  #login-form{
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    background: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  input {
+    /* display: block; */
+    width: 300px;
+    height: 28px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  button {
+    display: block;
+    width: 300px;
+    margin-left: 100px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #ffff;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
