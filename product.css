@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+.buy-btn {
+    background-color: #465b52;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn {
+    background-color: #465b52;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    color: #222;
+    padding: 0%;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px ;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin:40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+body{
+    width: 100%;
+}
+
+/*Header Start*/
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3e6f3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #008178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #008178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#close{
+    display: none;
+}
+
+#mobile{
+    display: none;
+    text-align: center;
+}
+
+/* product copy */
+
+.bg-images{
+    text-align: center;
+  }
+  .bg-images img{
+    width:800px;
+    object-fit: cover;
+  }
+  .bg-images{
+    background-color: #f3f3f3;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-head-of-products{
+    color:black;
+    padding-top:100px;
+    text-align: center;
+  }
+  .colored-word{
+    color:#175603;
+    
+    
+  }
+  .colored-word-bigger-size{
+    color:#175603;
+    font-size:35px;
+  }
+  .bigletter{ 
+    font-size: 80px;
+  }
+  .header-categories{
+    text-align: center;
+    padding-top:200px;
+    font-size:23px;
+    color:black;  
+  }
+  .info-of-head{
+    text-align: center;  
+  }
+  .products-hr{
+    border: 1px solid black;
+    width:100%;
+  }
+  .kurti, .western, .heels, .g-shoes, .shirts, .shoes, .joggers, .jeans{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-left:50px;
+    margin-top: 20px;
+    
+  }
+  @media screen and (max-width:974px){
+    .kurti, .western, .heels, .g-shoes, .shirts, .shoes, .joggers, .jeans{
+      padding-left:20px;
+      padding-right:20px;
+    }
+  }
+  .btn-of-img{
+    border:none;
+    position: absolute;
+  }
+  .sry-msg{
+    color:black;
+    text-align:center;
+    padding-bottom:20px;
+    margin-top: 40px;
+  } 
+  
+  .cart-details{
+    padding-left:50px;
+  }
+  .cart-details li{
+    list-style-type:decimal;
+  }
+  .head-of-cart{
+    color:#f84258;
+  
+  }
+  .hr-of-cart-head{
+    border: 1px solid black;
+    width:120px;
+  }
+  .msg-ps{
+    color:black;
+  }
+  .last-hr-of-product{
+    border: 1px solid black;
+    width:70%;
+  }
+  .btn-clear-list{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: none;
+    border:none;
+  }
+  .btn-clear-list:hover{
+    background-color: #ece3e3;
+  }
+  .ul_pr li{
+    font-size:18px;
+  }
+  img{
+    cursor: pointer;
+  }

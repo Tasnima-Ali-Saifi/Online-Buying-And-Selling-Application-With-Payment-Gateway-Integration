@@ -1,0 +1,87 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("img/pexels-pixabay-531880.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .message {
+    color: red;
+  }
+  .password-wrapper {
+    position: relative;
+  }
+
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .password-condition {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    background: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="file"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #message {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 480px) {
+    form {
+      padding: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"],
+    button {
+      margin-bottom: 10px;
+    }
+  }
+  
