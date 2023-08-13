@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <title>Sign Up</title>
+</head>
+<body>
+        
+        
+        <form id="signup-form" style="margin-top: 30px; border-radius: 20px;">
+          <h1>Signup Here</h1>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" required><br>
+          
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" required><br>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" required><br>
+          
+          <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span id="password-toggle" onclick="togglePasswordVisibility()">
+            <i class="fas fa-eye"></i>
+        </span>
+        <div class="password-condition" id="password-condition"></div><br>
+          
+          <label for="photo">Photo:</label>
+          <input type="file" id="photo" accept="image/*" required><br>
+        <a href="login.html" id="redirect">
+            <button type="submit" id="submit-btn" style="border-radius: 20px;"></a>Signup</button>
+        </a>
+        <div style="display: flex; font-style: oblique;">
+          <h3>Already created account..?</h3><a href="login.html"><h3>Login</h3></a>
+        </div>
+        </form>
+        
+        <p id="message"></p>
+
+        <script src="signup.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
